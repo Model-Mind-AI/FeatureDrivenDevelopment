@@ -1,0 +1,20 @@
+# OS
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+*.swp
+*.swo
+
+# Logs and temp
+*.log
+tmp/
+temp/
+
+# Dependencies (add language-specific entries under toolkit/* as needed)
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/

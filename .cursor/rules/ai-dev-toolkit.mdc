@@ -1,0 +1,11 @@
+---
+description: Conventions for authoring Cursor skills and toolkit plugins in this repository
+alwaysApply: true
+---
+
+# AI dev toolkit (this repo)
+
+- **Skills**: Each skill is a folder under `.cursor/skills/<name>/` with a required `SKILL.md` (YAML frontmatter with `name` and `description`). Use `_template` as the starting point; keep `SKILL.md` concise; put long reference in sibling markdown files.
+- **Naming**: Skill folder names use lowercase letters, numbers, and hyphens. Do not edit built-in skills under the user’s global Cursor install.
+- **Plugins / automation**: Place source for MCP servers, CLIs, or other “plugins” under `toolkit/plugins/` (or `toolkit/mcp/` for MCP-specific servers). Prefer small, focused packages with their own README when a component grows.
+- **Hooks**: Project hooks belong under `.cursor/` per Cursor docs (`hooks.json` and hook scripts); keep hook scripts next to where they are referenced.
